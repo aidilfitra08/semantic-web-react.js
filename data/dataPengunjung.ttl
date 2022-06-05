@@ -1,0 +1,197 @@
+@prefix people: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ab:     <http://data.pengunjung.com/pujasera/#> .
+
+# People
+people:p0001
+    ab:name "Aidil" ;
+    ab:age "22" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Teknik Informatika" ;
+    ab:favorite_stall "D'Milk" ;
+    ab:favorite_food "Taro Ice" .
+
+people:p0002
+    ab:name "Almer" ;
+    ab:age "21" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Teknik Informatika" ;
+    ab:favorite_stall "Dapur Ina" ;
+    ab:favorite_food "Nasi goreng Telur" .
+
+people:p0003
+    ab:name "Dini" ;
+    ab:age "20" ;
+    ab:gender "Perempuan" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Hukum" ;
+    ab:favorite_stall "Warung Bubur Pak Amir" ;
+    ab:favorite_food "Lontong Kari Ayam" .
+
+people:p0004
+    ab:name "Rina" ;
+    ab:age "20" ;
+    ab:gender "Perempuan" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Hukum" ;
+    ab:favorite_stall "Warung Bubur Pak Amir" ;
+    ab:favorite_food "Lontong Kari Sapi" .
+
+people:p0005
+    ab:name "Anwar" ;
+    ab:age "22" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Biologi" ;
+    ab:favorite_stall "Salero Iko" ;
+    ab:favorite_food "Nasi Ayam Goreng" .
+
+people:p0006
+    ab:name "Budi" ;
+    ab:age "22" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Institut Teknologi Bandung" ;
+    ab:jurusan "Geologi" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Saos Tiram" .
+
+people:p0007
+    ab:name "Reza" ;
+    ab:age "19" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Institut Teknologi Bandung" ;
+    ab:jurusan "Geologi" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Saos Tiram" .
+
+people:p0008
+    ab:name "Nanta" ;
+    ab:age "20" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Geologi" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Saos Blackpepper" .
+
+people:p0009
+    ab:name "Isroq" ;
+    ab:age "22" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Ilmu Pemerintahan" ;
+    ab:favorite_stall "Salero Iko" ;
+    ab:favorite_food "Nasi Rendang" .
+
+people:p0010
+    ab:name "Larasati" ;
+    ab:age "19" ;
+    ab:gender "Perempuan" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Administrasi Publik" ;
+    ab:favorite_stall "Go Milk" ;
+    ab:favorite_food "Go Milk Strawberry" .
+
+people:p0011
+    ab:name "Mina" ;
+    ab:age "20" ;
+    ab:gender "Perempuan" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Ekonomi" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Saos Keju" .
+
+people:p0012
+    ab:name "Alfi" ;
+    ab:age "21" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Hukum" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Saos Keju" .
+
+people:p0013
+    ab:name "Saddam" ;
+    ab:age "21" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Teknik Informatika" ;
+    ab:favorite_stall "Warung Bubur Pak Amir" ;
+    ab:favorite_food "Lontong Kari Spesial" .
+
+people:p0014
+    ab:name "Ratna" ;
+    ab:age "21" ;
+    ab:gender "Perempuan" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Ekonomi" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Bakar" .
+
+people:p0015
+    ab:name "Irfan" ;
+    ab:age "21" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Mahasiswa" ;
+    ab:institusi "Universitas Padjadjaran" ;
+    ab:jurusan "Geologi" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Bakar" .
+
+people:p0016
+    ab:name "Siti" ;
+    ab:age "16" ;
+    ab:gender "Perempuan" ;
+    ab:job "Siswa(SMA)" ;
+    ab:institusi "SMK Vokasi Pasundan" ;
+    ab:jurusan "-" ;
+    ab:favorite_stall "Salero Iko" ;
+    ab:favorite_food "Nasi Ayam Bakar" .
+
+people:p0017
+    ab:name "Vindo" ;
+    ab:age "25" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Pekerja" ;
+    ab:institusi "Kantor Lurah Ciseke" ;
+    ab:jurusan "-" ;
+    ab:favorite_stall "Salero Iko" ;
+    ab:favorite_food "Nasi Ayam Goreng" .
+
+people:p0018
+    ab:name "Vanka" ;
+    ab:age "8" ;
+    ab:gender "Perempuan" ;
+    ab:job "Siswa(SD)" ;
+    ab:institusi "SDN 01 Jatinangor" ;
+    ab:jurusan "-" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Original" .
+
+people:p0019
+    ab:name "Restu" ;
+    ab:age "14" ;
+    ab:gender "Laki-Laki" ;
+    ab:job "Siswa(SMP)" ;
+    ab:institusi "SMPN 02 Jatinangor" ;
+    ab:jurusan "-" ;
+    ab:favorite_stall "Ayam Geprek Rempah" ;
+    ab:favorite_food "Ayam Geprek Original" .
+    
+
+
+

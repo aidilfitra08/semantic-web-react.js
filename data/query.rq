@@ -1,0 +1,79 @@
+#get All Data
+PREFIX people: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ab:     <http://data.pengunjung.com/pujasera/#>
+
+SELECT ?name ?age ?gender ?job ?institusi ?jurusan ?favorite_stall ?favorite_food
+    WHERE
+    {
+        ?id ab:name ?name ;
+            ab:age ?age ;
+            ab:gender ?gender ;
+            ab:job ?job ;
+            ab:institusi ?institusi ;
+            ab:jurusan ?jurusan ;
+            ab:favorite_stall ?favorite_stall ;
+            ab:favorite_food ?favorite_food .
+    }ORDER BY ASC(?name)
+
+
+#get data by Search All
+PREFIX people: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ab:     <http://data.pengunjung.com/pujasera/#>
+
+SELECT ?name ?age ?gender ?job ?institusi ?jurusan ?favorite_stall ?favorite_food
+    WHERE
+    {
+        ?id ab:name ?name ;
+            ab:age ?age ;
+            ab:gender ?gender ;
+            ab:job ?job ;
+            ab:institusi ?institusi ;
+            ab:jurusan ?jurusan ;
+            ab:favorite_stall ?favorite_stall ;
+            ab:favorite_food ?favorite_food .
+                    
+        FILTER (
+            regex(?id, "${value.input}", "i") ||
+            regex(?name, "${value.input}", "i") ||
+            regex(?age, "${value.input}", "i") ||
+            regex(?gender, "${value.input}", "i") ||
+            regex(?job, "${value.input}", "i") ||
+            regex(?institusi, "${value.input}", "i") ||
+            regex(?jurusan, "${value.input}", "i") ||
+            regex(?favorite_stall, "${value.input}", "i") ||
+            regex(?favorite_food, "${value.input}", "i")
+        )
+    }
+
+# Advanced Search
+PREFIX people: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ab:     <http://data.pengunjung.com/pujasera/#>
+
+SELECT ?name ?age ?gender ?job ?institusi ?jurusan ?favorite_stall ?favorite_food
+    WHERE
+    {
+        ?id ab:name ?name ;
+            ab:age ?age ; 
+            ab:gender ?gender ; 
+            ab:job ?job ; 
+            ab:institusi ?institusi ; 
+            ab:jurusan ?jurusan ; 
+            ab:favorite_stall ?favorite_stall ; 
+            ab:favorite_food ?favorite_food .
+                    
+        FILTER contains(lcase(str(?age)), lcase(str("${
+            value.age ? value.age : ""
+        }")))
+        FILTER contains(lcase(str(?gender)), lcase(str("${
+            value.gender ? value.gender : ""
+        }")))
+        FILTER contains(lcase(str(?job)), lcase(str("${
+            value.job ? value.job : ""
+        }")))
+        FILTER contains(lcase(str(?institusi)), lcase(str("${
+        value.institusi ? value.institusi : ""
+        }")))
+        FILTER contains(lcase(str(?jurusan)), lcase(str("${
+            value.jurusan ? value.jurusan : ""
+        }")))
+    } ORDER BY ASC (?name)

@@ -1,0 +1,112 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #65ce4b;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.navbar .img-wrapper {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.navbar .img-wrapper img {
+    width: 90px;
+    height: auto;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+    margin-right: 40px;
+}
+
+.home,
+.guide,
+.advanced,
+.about {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.home :hover,
+.guide :hover,
+.advanced :hover,
+.about :hover {
+    color: #d1d1ff;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .logo {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #7879F1;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        z-index: 100;
+    }
+    .home,
+    .guide,
+    .advanced,
+    .about {
+        color: #ffffff;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .home :hover,
+    .guide :hover,
+    .advanced :hover,
+    .about :hover {
+        background-color: #5858ff;
+        color: white;
+    }
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: #ffffff;
+        background: none;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+}

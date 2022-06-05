@@ -1,0 +1,25 @@
+.code-list {
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 9.77778px 47.6667px 1.22222px rgba(2, 47, 70, 0.15);
+}
+
+.code-list ul {
+    list-style: none;
+}
+
+.code-list ul li .title {
+    background-color: #48d648;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.code-list ul li .content h3 {
+    font-weight: 200;
+}
