@@ -1,2 +1,2 @@
 # semantic-web-nodejs
- Semantic Web dengan framework Node.js
+ Semantic Web dengan framework React.js
